@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "51347150-0b4c-43e0-b080-93b10009d6ad",
+		"name": "BookMyShowCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28707693"
+	},
+	"item": [
+		{
+			"name": "Add Movie API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"movieName\": \"Avatar: The Way of Water\",\n  \"moviePoster\": \"https://example.com/avatar2.jpg\",\n  \"movieDescription\": \"Jake Sully and Neytiri must protect their family while confronting new threats on Pandora.\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/movie/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"movie",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bms/api/v1/theater/add/Bengaluru",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/theater/add/xyzcity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"theater",
+						"add",
+						"xyzcity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bms/api/v1/theater/add/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"theaterName\": \"Cinepolis ETA Mall\",\n  \"theaterAddress\": \"ETA Mall, Binny Pete, Bengaluru\",\n  \"cityId\": \"c188ff75-9c4d-471d-b22d-ebda6f001b51\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/theater/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"theater",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bms/api/v1/theater/city/c188ff75-9c4d-471d-b22d-ebda6f001b51",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/theater/city/c188ff75-9c4d-471d-b22d-ebda6f001b51",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"theater",
+						"city",
+						"c188ff75-9c4d-471d-b22d-ebda6f001b51"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bms/api/v1/theater/add/auditorium",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"auditoriumName\": \"Audi 1\",\n  \"capacity\": \"150\",\n  \"theaterId\": \"3122b3ed-4bba-49ae-adcd-a1544e803877\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/theater/add/auditorium",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"theater",
+						"add",
+						"auditorium"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bms/api/v1/theater/add/shows",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"movieId\": \"36d28e22-0778-4c80-b94f-f35dbe9b5ef3\",\n  \"showStartTime\": \"2025-12-16T10:00:00\",\n  \"showEndTime\": \"2025-12-16T12:45:00\",\n  \"auditoriumId\": \"4aa24729-4354-46f7-9008-d53bacdc2b86\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/theater/add/shows",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"theater",
+						"add",
+						"shows"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bms/api/v1/theater/add/seats",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"seatNumber\": 1,\n    \"rowValue\": 1,\n    \"colValue\": 1,\n    \"seatType\": \"NORMAL\",\n    \"auditoriumId\": \"4aa24729-4354-46f7-9008-d53bacdc2b86\"\n  },\n  {\n    \"seatNumber\": 2,\n    \"rowValue\": 1,\n    \"colValue\": 2,\n    \"seatType\": \"NORMAL\",\n    \"auditoriumId\": \"4aa24729-4354-46f7-9008-d53bacdc2b86\"\n  },\n  {\n    \"seatNumber\": 15,\n    \"rowValue\": 3,\n    \"colValue\": 5,\n    \"seatType\": \"PLATINUM\",\n    \"auditoriumId\": \"4aa24729-4354-46f7-9008-d53bacdc2b86\"\n  }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/theater/add/seat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"theater",
+						"add",
+						"seat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bms/api/v1/movie/add/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Suresh Kumar\",\n  \"age\": \"35\",\n  \"email\": \"suresh.kumar@example.org\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/movie/add/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"movie",
+						"add",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bms/api/v1/movie/block/seat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"showId\": \"58e71d23-e575-4943-b002-ff9019ec9a4a\",\n  \"userId\": \"78082e69-429e-4154-ac8a-826bdc209074\",\n  \"seatId\": [\n    \"d47c2d23-f1f0-448a-afb7-851b84c0d2dd\",\n    \"c1060d0a-198e-41af-88ec-ef39463a508b\"\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/movie/block/seat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"movie",
+						"block",
+						"seat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bms/api/v1/movie/block/seat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"showId\": \"58e71d23-e575-4943-b002-ff9019ec9a4a\",\n  \"userId\": \"78082e69-429e-4154-ac8a-826bdc209074\",\n  \"seatId\": [\n    \"d47c2d23-f1f0-448a-afb7-851b84c0d2dd\",\n    \"c1060d0a-198e-41af-88ec-ef39463a508b\"\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bms/api/v1/movie/book/seat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bms",
+						"api",
+						"v1",
+						"movie",
+						"book",
+						"seat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
